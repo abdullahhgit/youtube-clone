@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Stack } from '@mui/material'
 import { logo } from '../utils/constants'
 import SearchBar from './SearchBar'
+import zIndex from '@mui/material/styles/zIndex'
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
         direction= "row"
         alignItems= "center"
         p={2}
-        sx={{position: 'sticky', background: "#000", top: 0, justifyContent: 'space-between'}}>
+        sx={{position: 'sticky', background: "#000", top: 0, justifyContent: 'space-between', zIndex: 1300}}>
 
         
         <Link to="/"  style={{display: "flex", alignItems: "center"}}>
